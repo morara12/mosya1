@@ -1,0 +1,67 @@
+.title {
+  margin-top: 10px;
+  font-size: 50px;
+  margin-left: 15%;
+  padding: 0 0;
+  content: ".";
+}
+.example {
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttons{
+  text-align: center;
+}
+.button{
+  display: inline-block;
+  background: #ffc33c;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #FFF;
+  text-decoration: none;
+}
+.item{
+  padding: 0;
+  height: 20px;
+  padding: 0;
+}
+.header-menu{
+  margin: 0 0 0 auto;
+  display: flex;
+}
+.wrap {
+  display:flex;
+  flex-flow: wrap;
+  border:2px #ccc solid;
+  height:170px;
+  width: 300px;
+}
+.main {
+  margin: 0 10px;
+  -webkit-flex: 2;
+  flex: 2;
+}
+.side {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.flex{
+  margin: 3.5em 300px; /* 外側の余白を、上下は3.5文字分に、左右は15pxに */
+  padding: 0;           /* 内側の余白を消す(念のため) */
+  flex-wrap: wrap;
+}
+.contentA{
+  background: #b3d874;
+  width: 50%;
+  height: 10000px;
+  float: left;
+}
+.contentB{
+  background: #6fb5ff;
+  height: 10000px;
+  float: right;
+}
