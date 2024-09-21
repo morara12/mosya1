@@ -7,9 +7,8 @@
 }
 .example {
   width: 1000px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: 1000px;
+  object-fit: cover;
 }
 .buttons{
   text-align: center;
@@ -65,4 +64,15 @@
   background: #6fb5ff;
   height: 10000px;
   float: right;
+}
+.grid{
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius:  16px;
 }
