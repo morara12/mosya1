@@ -59,7 +59,7 @@
   width: 80%;
   height: 10000px;
 }
-/* .grid{
+.grid{
   gap: 3rem 2rem;
   grid-template-columns: repeat(3, 1fr) ;
 }
@@ -83,4 +83,4 @@ margin-bottom: 1rem;
   background: #6fb5ff;
   height: 10000px;
   float: right;
-} */
+}
