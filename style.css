@@ -1,3 +1,10 @@
+html{
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 .title {
   margin-top: 10px;
   font-size: 50px;
@@ -5,22 +12,33 @@
   padding: 0 0;
   content: ".";
 }
+
 .example {
   width: 1000px;
   height: 1000px;
   object-fit: cover;
 }
+.button-background{
+  background: #E3DBD1;
+  box-shadow: 0px 5px #B2A390;
+  margin-bottom: 30px;
+}
 .buttons{
   text-align: center;
 }
-.button{
+.color-change-button{
   display: inline-block;
-  background: #ffc33c;
+  background: #785F4E;
   margin: 0 10px;
   padding: 10px 15px;
   border-radius: 4px;
   color: #FFF;
   text-decoration: none;
+  margin: 30px 3px;
+}
+.color-change-button:hover{
+  background: #FFF;
+  color: #FD8B8A;
 }
 .it{
   padding: 0;
@@ -53,6 +71,9 @@
   padding: 0;           /* 内側の余白を消す(念のため) */
   flex-wrap: wrap;
 }
+.d-flex{
+  display: flex;
+}
 /* contentA、Bは縦に分割しているセクションです */
 .contentA{
   background: #b3d874;
@@ -83,4 +104,11 @@ margin-bottom: 1rem;
   background: #6fb5ff;
   height: 10000px;
   float: right;
+}
+@media screen and (max-width: 1200px) {
+	/* 1200px以下に適用されるCSS（タブレット用） */
+  .button-background{
+    width: 70%;
+  }
+  
 }
