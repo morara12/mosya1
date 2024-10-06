@@ -22,6 +22,7 @@ html{
   background: #E3DBD1;
   box-shadow: 0px 5px #B2A390;
   margin-bottom: 30px;
+  width: 900px
 }
 .buttons{
   text-align: center;
@@ -89,6 +90,20 @@ html{
   object-fit: cover;
   border-radius:  16px;
 }
+.item_2{
+  width: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+} 
+.left-bottom {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.right-bottom {
+  object-position: 100% 100%
+}
 .wrapper {
   max-width: 1120px;
   margin: auto;
@@ -111,4 +126,14 @@ margin-bottom: 1rem;
     width: 70%;
   }
   
+}
+.ribbon{
+  content: "";
+  position:absolute;
+  top:0;
+  right:0;
+  width:0;
+  height:0;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
 }
