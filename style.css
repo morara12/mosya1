@@ -76,7 +76,6 @@ html{
 /* contentA、Bは縦に分割しているセクションです */
 .contentA{
   background: #b3d874;
-  margin-inline: auto;
 }
 
 .border-top{
@@ -153,19 +152,34 @@ h2 {
   }
   
 }
-.ribbon{
-  position:relative;
-  background: #6aa7cd;
-  padding: 1em;
+.ribbon1{
+  display: inline-block;
+  position: relative;
+  height: 21px;/*リボンの高さ*/
+  line-height: 50px;/*リボンの高さ*/
+  text-align: center;
+  padding: 0 30px;/*横の大きさ*/
+  font-size: 12px;/*文字の大きさ*/
+  background: #f57a78;/*塗りつぶし色*/
+  color: #FFF;/*文字色*/
+  box-sizing: border-box;
+  width: 160px;
+  margin-top: 0;
 }
-.ribbon:after{
-  content: "";
-  position:absolute;
-  top:0;
-  right:0;
-  width:0;
-  height:0;
+.ribbon1:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-width: 25px 15px 25px 0px;
+  border-color: transparent green transparent transparent;
   border-style: solid;
-  border-color: transparent #fff transparent transparent;
-  border-width: 25px 15px 25px 0;
+}
+
+.wara {
+  width: 300px;
+  background-color: green;
 }
